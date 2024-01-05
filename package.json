@@ -5,11 +5,16 @@
   "description": "",
   "scripts": {
     "test": "cypress open",
-    "test:cli": "cypress run"
+    "test:cli": "cypress run",
+    "cy:report": "cypress run --browser chrome --config-file tests/cypress.auth.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.1"
+  },
+  "dependencies": {
+    "cypress-commands": "^3.0.0",
+    "cypress-mochawesome-reporter": "^3.8.0"
   }
 }
