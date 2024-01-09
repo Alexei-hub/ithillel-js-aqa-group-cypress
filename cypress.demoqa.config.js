@@ -6,8 +6,8 @@ module.exports = defineConfig({
     config_env: 'config env variable value',
   },
   e2e: {
-    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx,mjs}',
-    baseUrl: 'https://www.akveo.com/ngx-admin/',
+    specPattern: 'cypress/e2e/lecture17.cy.mjs',
+    baseUrl: 'https://demoqa.com/',
     watchForFileChanges: false,
     setupNodeEvents(on) {
       require('cypress-mochawesome-reporter/plugin')(on);

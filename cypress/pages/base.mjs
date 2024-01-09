@@ -1,10 +1,10 @@
 export class BasePage {
-  URL
-  constructor(url){
-    this.URL = url
+  URL;
+  constructor(url) {
+    this.URL = url;
   }
 
-  visit(){
-    cy.visit(this.URL, {failOnStatusCode: false})
+  visit() {
+    cy.visit(this.URL, { failOnStatusCode: false });
   }
 }
