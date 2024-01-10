@@ -6,7 +6,8 @@ module.exports = defineConfig({
     config_env: 'config env variable value',
   },
   e2e: {
-    specPattern: 'cypress/e2e/lecture17.cy.mjs',
+    // specPattern: 'cypress/e2e/lecture17.cy.mjs',
+    specPattern: 'cypress/e2e/homework/**.cy.mjs',
     baseUrl: 'https://demoqa.com/',
     watchForFileChanges: false,
     setupNodeEvents(on) {
