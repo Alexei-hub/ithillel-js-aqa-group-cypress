@@ -12,9 +12,7 @@ describe('responces checking', () => {
     it('checking response of book with ISBN 9781449325862', () => {
         cy.request({
             'url': 'BookStore/v1/Book?ISBN=9781449325862',
-            qs: {
-                "isbnKey": '?ISBN=9781449325862'
-            }
+            'qs': '?ISBN=9781449325862'
         }).as('response');
 
         cy.get('@response').should((resp) => {
